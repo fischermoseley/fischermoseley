@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>fischer moseley 🐠</title>
+        <description>Menca personal blogging theme for Jekyll</description>
+        <link>http://localhost:4000/</link>
+        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Wed, 20 Sep 2023 16:18:35 +0000</pubDate>
+        <lastBuildDate>Wed, 20 Sep 2023 16:18:35 +0000</lastBuildDate>
+        <generator>Jekyll v4.3.2</generator>
+        
+            <item>
+                <title>Luxo: The Pixar Lamp</title>
+                <description>&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+
+&lt;p&gt;Available as a &lt;a href=&quot;https://github.com/fischermoseley/pixar_lamp&quot;&gt;GitHub&lt;/a&gt; repo.&lt;/p&gt;
+
+&lt;h2 id=&quot;final-presentation&quot;&gt;Final Presentation&lt;/h2&gt;
+
+&lt;object data=&quot;../assets/2_74_Final_Presentation.pdf&quot; width=&quot;1000&quot; height=&quot;1000&quot; type=&quot;application/pdf&quot;&gt;&lt;/object&gt;
+</description>
+                <pubDate>Mon, 24 Apr 2023 12:01:35 +0000</pubDate>
+                <link>http://localhost:4000/luxo</link>
+                <guid isPermaLink="true">http://localhost:4000/luxo</guid>
+                
+                <category>MIT Projects</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>Soft-catching a Projectile with a Robot Arm</title>
+                <description>&lt;h2 id=&quot;presentation&quot;&gt;Presentation&lt;/h2&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/hLmmnlAuqdo?si=hCUjOqoJCs9jig2r&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/FischerMoseley/yoink&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;report&quot;&gt;Report&lt;/h2&gt;
+&lt;object data=&quot;../assets/6_843_Final_Project.pdf&quot; width=&quot;1000&quot; height=&quot;1000&quot; type=&quot;application/pdf&quot;&gt;&lt;/object&gt;
+
+</description>
+                <pubDate>Sun, 23 Apr 2023 12:01:35 +0000</pubDate>
+                <link>http://localhost:4000/yoink</link>
+                <guid isPermaLink="true">http://localhost:4000/yoink</guid>
+                
+                <category>MIT Projects</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>Active Topolectrical Circuits</title>
+                <description>
+</description>
+                <pubDate>Sun, 23 Apr 2023 12:01:35 +0000</pubDate>
+                <link>http://localhost:4000/topolectrics</link>
+                <guid isPermaLink="true">http://localhost:4000/topolectrics</guid>
+                
+                <category>MIT Projects</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>StickyAR</title>
+                <description>
+</description>
+                <pubDate>Sun, 23 Apr 2023 12:01:35 +0000</pubDate>
+                <link>http://localhost:4000/sticky-ar</link>
+                <guid isPermaLink="true">http://localhost:4000/sticky-ar</guid>
+                
+                <category>MIT Projects</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>Motorized Shopping Cart</title>
+                <description>&lt;p&gt;Truthfully, this project was the result of a manic vision manifested through a pile of VESCs over IAP. But the results speak for themselves.&lt;/p&gt;
+
+&lt;iframe width=&quot;360&quot; height=&quot;640&quot; src=&quot;https://www.youtube.com/embed/_9Mg9RTwob0?si=hvTB09PwlBgRaSlo&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;implementation&quot;&gt;Implementation&lt;/h2&gt;
+
+&lt;p&gt;Two virtues were prioritized while making this thing - frugality and speed of assembly. This meant that it’s not the &lt;em&gt;cleanest&lt;/em&gt; design, but it only took a few evenings to build and maybe ~$60 of things I didn’t have lying around.&lt;/p&gt;
+
+&lt;p&gt;Torque is provided by two hub motors, left over from the two-wheeled onewheel (link). These are controlled by a pair of VESCs that have their PPM inputs connected to PWM pins on an ESP32. The ESP32 pairs to a PS3 controller over bluetooth, where the forward/backwards motion of each stick controls the torque commanded to each VESC. There’s also a &lt;a href=&quot;https://en.wikipedia.org/wiki/Dead_man%27s_switch&quot;&gt;dead man’s switch&lt;/a&gt; on the PS3 controller that disengages the motors if both buttons aren’t held down. I did have to reprogram the PS3 controller’s target MAC address with &lt;a href=&quot;https://sixaxispairtool.en.lo4d.com/windows&quot;&gt;SixAxisPairTool&lt;/a&gt; to get it to the ESP32 though.&lt;/p&gt;
+
+&lt;p&gt;The RGB LEDs under the cart are controlled by another ESP32 running &lt;a href=&quot;https://kno.wled.ge/&quot;&gt;WLED&lt;/a&gt;, which is a phenomenally well put-together bit of software that lets me control the LED string over WiFi. MIT has pretty solid coverage over campus, so I can play Spotify on the bluetooth speakers and then use &lt;a href=&quot;https://ledfx.readthedocs.io/en/master/&quot;&gt;LedFx&lt;/a&gt; to make the LEDs sync to the music!&lt;/p&gt;
+
+&lt;p&gt;For those curious the code’s here, there’s nothing too crazy in it:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/FischerMoseley/TheKing&quot;&gt;https://github.com/FischerMoseley/TheKing&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As far as the mechanical side of things goes, I took some old pushrod stock from FSAE and cut it about halfway down. This lets the motors slide in, and keeps them colinear so the cart goes in a straight line. In hindsight this stock wasn’t as thick as it should have been (it’s a little bent open now) but it does a pretty good job.&lt;/p&gt;
+
+&lt;p&gt;I should also redo the mounts that are welded to the cart - those came with the cart and they’re probably good enough for now, but it’s just a friction fit holding it together. I’d like the safety of the cart to not be dependent on how much preload’s on those bolts, but that’s a problem for later.&lt;/p&gt;
+
+&lt;p&gt;I’m kinda proud of where all the parts were sourced from and how cheap everything turned out:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Shopping cart - free (inherited from an old sim while cleaning out the simmons woodshop)&lt;/li&gt;
+  &lt;li&gt;Hub motors - free (left over from swapping the motor on the two-wheeled onewheel)&lt;/li&gt;
+  &lt;li&gt;VESCs - free (left over after making the Pixar Lamp use a single ODrive)&lt;/li&gt;
+  &lt;li&gt;Two 6S 20Ah LiPos- found on the side of the road (thanks miters@!!)&lt;/li&gt;
+  &lt;li&gt;6m WS2812 LEDs - $50&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Two NodeMCU ESP32s  - $10&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Total cost: only $60 for pure chaos.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;lessons-learned&quot;&gt;Lessons Learned&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;There’s some fine print with using torque control. I just took a bunch of robotics classes (2.74, 6.832, 6.843) that really jive with torque control, and so I configured the VESC to use that first. I noticed that it’s &lt;em&gt;super&lt;/em&gt; easy to break the tractive limit with these motors, especially since the rubber that comes on those hub wheels is really hard and grinds off easily. After about a week the tires now look like this:
+    &lt;ul&gt;
+      &lt;li&gt;I made the throttle curve a little less aggressive - the stick isn’t very sensitive when you barely push it, but after you push it a ways the torque kicks in pretty quick. This diagram explains it pretty well:
+  &lt;img src=&quot;../images/ramp.png&quot; alt=&quot;&quot; /&gt; 
+  (from &lt;a href=&quot;http://multicopterworld.com/2011/04/multicopter-throttle-curve/&quot;&gt;http://multicopterworld.com/2011/04/multicopter-throttle-curve/&lt;/a&gt;)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;The default parameters for PID speed control on the VESC are super garbage, and speed control doesn’t feel that natural anyway. So far torque control with an exponential throttle curve seems to be the best way to approximate a ‘gas pedal’ for each wheel.&lt;/li&gt;
+  &lt;li&gt;The cart has no emergency stop - and adding one would be pretty nontrivial. There’s no mechanical brakes, so the only way to slow down it to exert negative torque (this is better known as regenerative braking). The standard procedure of using a mushroom switch in series with the batteries as an estop would be problematic - if you push it, you remove your ability to slow down. There’s two ways of fixing this:
+    &lt;ul&gt;
+      &lt;li&gt;Adding mechanical brakes. This is really hard to do with hub motors, and I didn’t have the resources to make a better powertrain with the time and parts I had.&lt;/li&gt;
+      &lt;li&gt;Make the estop act in software, commanding the motors to brake until the motor stops moving. This absolutely should be done, but requires rewiring the VESCs to accept input over UART so they know when to coast, and when to brake. I haven’t found a good library that isn’t super old and is compatible with the standard suite of MCUs under the Arduino umbrella.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;VESCs kinda suck. The current control is good enough for electric skateboards and shopping carts, but I don’t think they were commanding anything &lt;em&gt;close&lt;/em&gt; to the current that they were programmed to. I was able to get the cart moving a bit after after fiddling with the settings, but after building the Pixar Lamp I don’t think the resolution on the onboard shunts is good enough for anything that’s not tractive. Two-channel ODrives are cheaper per-channel and have a nice python/USB interface, I’ll probably be sticking with them for the time being.&lt;/li&gt;
+  &lt;li&gt;ESP32 modules have a bit of variation amongst types. I used a NodeMCU board, but after trying on a ESP32 from 6.08 we couldn’t get the PS3 controller to connect.&lt;/li&gt;
+  &lt;li&gt;Sensorless doesn’t work at low speeds, regardless of how many poles your motor has! The hub motors are 12-pole machines (I think) and they’re still obnoxious to get any torque out of at low speed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;cute-pictures&quot;&gt;Cute Pictures&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;../images/cart0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+                <pubDate>Sun, 23 Apr 2023 12:01:35 +0000</pubDate>
+                <link>http://localhost:4000/shopping-cart</link>
+                <guid isPermaLink="true">http://localhost:4000/shopping-cart</guid>
+                
+                <category>MIT Projects</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>Classifiers for Improving Superconducting Qubit Readout Fidelity from Homodyne Detection</title>
+                <description>&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/FischerMoseley/readout_classifier&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;report&quot;&gt;Report&lt;/h2&gt;
+&lt;object data=&quot;../assets/6_644_Final_Project.pdf&quot; width=&quot;1000&quot; height=&quot;1000&quot; type=&quot;application/pdf&quot;&gt;&lt;/object&gt;
+</description>
+                <pubDate>Sun, 23 Apr 2023 12:01:35 +0000</pubDate>
+                <link>http://localhost:4000/readout</link>
+                <guid isPermaLink="true">http://localhost:4000/readout</guid>
+                
+                <category>MIT Projects</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>SparkFun Qwiic Switch/Button/Thermocouple</title>
+                <description>&lt;p&gt;&lt;img src=&quot;/images/qwiic.jpg#wide&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+                <pubDate>Sun, 23 Apr 2023 12:01:35 +0000</pubDate>
+                <link>http://localhost:4000/qwiic</link>
+                <guid isPermaLink="true">http://localhost:4000/qwiic</guid>
+                
+                <category>MIT Projects</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>The Art and Science of PCB Design</title>
+                <description>
+</description>
+                <pubDate>Sun, 23 Apr 2023 12:01:35 +0000</pubDate>
+                <link>http://localhost:4000/pcb</link>
+                <guid isPermaLink="true">http://localhost:4000/pcb</guid>
+                
+                <category>MIT Projects</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>Manta: An In-Situ Debugger for Programmable Hardware</title>
+                <description>
+</description>
+                <pubDate>Sun, 23 Apr 2023 12:01:35 +0000</pubDate>
+                <link>http://localhost:4000/manta</link>
+                <guid isPermaLink="true">http://localhost:4000/manta</guid>
+                
+                <category>MIT Projects</category>
+                
+                
+            </item>
+        
+            <item>
+                <title>Formula SAE Low Voltage Power Distribution</title>
+                <description>
+</description>
+                <pubDate>Sun, 23 Apr 2023 12:01:35 +0000</pubDate>
+                <link>http://localhost:4000/lv-batt</link>
+                <guid isPermaLink="true">http://localhost:4000/lv-batt</guid>
+                
+                <category>MIT Projects</category>
+                
+                
+            </item>
+        
+    </channel>
+</rss>

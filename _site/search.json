@@ -1,0 +1,243 @@
+[
+  
+    {
+      "title"    : "Luxo: The Pixar Lamp",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/luxo",
+      "date"     : "Apr 24, 2023",
+      "content"  : "CodeAvailable as a GitHub repo.Final Presentation",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-24T12:01:35+00:00'>24 Apr 2023</time><a class='article__image' href='/luxo'> <img src='/images/luxo.png' alt='Luxo: The Pixar Lamp'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/luxo'>Luxo: The Pixar Lamp</a> </h2><p class='article__excerpt'>Final Project for 2.74 Bioinspired Robotics in Fall 2021. Done with Aditya Mehrotra :)</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Soft-catching a Projectile with a Robot Arm",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/yoink",
+      "date"     : "Apr 23, 2023",
+      "content"  : "PresentationCodeGitHubReport",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/yoink'> <img src='/images/yoink.svg' alt='Soft-catching a Projectile with a Robot Arm'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/yoink'>Soft-catching a Projectile with a Robot Arm</a> </h2><p class='article__excerpt'>Final project for 6.843 Robotic Manipulation in Fall 2021. Done with Daniel Adebi.</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Active Topolectrical Circuits",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/topolectrics",
+      "date"     : "Apr 23, 2023",
+      "content"  : "",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/topolectrics'> <img src='/images/topolectrics.png' alt='Active Topolectrical Circuits'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/topolectrics'>Active Topolectrical Circuits</a> </h2><p class='article__excerpt'>Research project in Applied Mathematics Lab, published in PNAS.</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "StickyAR",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/sticky-ar",
+      "date"     : "Apr 23, 2023",
+      "content"  : "",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/sticky-ar'> <img src='/images/sticky_ar.jpg' alt='StickyAR'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/sticky-ar'>StickyAR</a> </h2><p class='article__excerpt'>Project for HackMIT 2019, won first place in the Entertainment category. Done with Luke Igel, Tim Gutterman, and Zach Rolfness.</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Motorized Shopping Cart",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/shopping-cart",
+      "date"     : "Apr 23, 2023",
+      "content"  : "Truthfully, this project was the result of a manic vision manifested through a pile of VESCs over IAP. But the results speak for themselves.ImplementationTwo virtues were prioritized while making this thing - frugality and speed of assembly. This meant that it’s not the cleanest design, but it only took a few evenings to build and maybe ~$60 of things I didn’t have lying around.Torque is provided by two hub motors, left over from the two-wheeled onewheel (link). These are controlled by a pair of VESCs that have their PPM inputs connected to PWM pins on an ESP32. The ESP32 pairs to a PS3 controller over bluetooth, where the forward/backwards motion of each stick controls the torque commanded to each VESC. There’s also a dead man’s switch on the PS3 controller that disengages the motors if both buttons aren’t held down. I did have to reprogram the PS3 controller’s target MAC address with SixAxisPairTool to get it to the ESP32 though.The RGB LEDs under the cart are controlled by another ESP32 running WLED, which is a phenomenally well put-together bit of software that lets me control the LED string over WiFi. MIT has pretty solid coverage over campus, so I can play Spotify on the bluetooth speakers and then use LedFx to make the LEDs sync to the music!For those curious the code’s here, there’s nothing too crazy in it:https://github.com/FischerMoseley/TheKingAs far as the mechanical side of things goes, I took some old pushrod stock from FSAE and cut it about halfway down. This lets the motors slide in, and keeps them colinear so the cart goes in a straight line. In hindsight this stock wasn’t as thick as it should have been (it’s a little bent open now) but it does a pretty good job.I should also redo the mounts that are welded to the cart - those came with the cart and they’re probably good enough for now, but it’s just a friction fit holding it together. I’d like the safety of the cart to not be dependent on how much preload’s on those bolts, but that’s a problem for later.I’m kinda proud of where all the parts were sourced from and how cheap everything turned out:  Shopping cart - free (inherited from an old sim while cleaning out the simmons woodshop)  Hub motors - free (left over from swapping the motor on the two-wheeled onewheel)  VESCs - free (left over after making the Pixar Lamp use a single ODrive)  Two 6S 20Ah LiPos- found on the side of the road (thanks miters@!!)  6m WS2812 LEDs - $50      Two NodeMCU ESP32s  - $10    Total cost: only $60 for pure chaos.Lessons Learned  There’s some fine print with using torque control. I just took a bunch of robotics classes (2.74, 6.832, 6.843) that really jive with torque control, and so I configured the VESC to use that first. I noticed that it’s super easy to break the tractive limit with these motors, especially since the rubber that comes on those hub wheels is really hard and grinds off easily. After about a week the tires now look like this:          I made the throttle curve a little less aggressive - the stick isn’t very sensitive when you barely push it, but after you push it a ways the torque kicks in pretty quick. This diagram explains it pretty well:     (from http://multicopterworld.com/2011/04/multicopter-throttle-curve/)        The default parameters for PID speed control on the VESC are super garbage, and speed control doesn’t feel that natural anyway. So far torque control with an exponential throttle curve seems to be the best way to approximate a ‘gas pedal’ for each wheel.  The cart has no emergency stop - and adding one would be pretty nontrivial. There’s no mechanical brakes, so the only way to slow down it to exert negative torque (this is better known as regenerative braking). The standard procedure of using a mushroom switch in series with the batteries as an estop would be problematic - if you push it, you remove your ability to slow down. There’s two ways of fixing this:          Adding mechanical brakes. This is really hard to do with hub motors, and I didn’t have the resources to make a better powertrain with the time and parts I had.      Make the estop act in software, commanding the motors to brake until the motor stops moving. This absolutely should be done, but requires rewiring the VESCs to accept input over UART so they know when to coast, and when to brake. I haven’t found a good library that isn’t super old and is compatible with the standard suite of MCUs under the Arduino umbrella.        VESCs kinda suck. The current control is good enough for electric skateboards and shopping carts, but I don’t think they were commanding anything close to the current that they were programmed to. I was able to get the cart moving a bit after after fiddling with the settings, but after building the Pixar Lamp I don’t think the resolution on the onboard shunts is good enough for anything that’s not tractive. Two-channel ODrives are cheaper per-channel and have a nice python/USB interface, I’ll probably be sticking with them for the time being.  ESP32 modules have a bit of variation amongst types. I used a NodeMCU board, but after trying on a ESP32 from 6.08 we couldn’t get the PS3 controller to connect.  Sensorless doesn’t work at low speeds, regardless of how many poles your motor has! The hub motors are 12-pole machines (I think) and they’re still obnoxious to get any torque out of at low speed.Cute Pictures",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/shopping-cart'> <img src='/images/shopping_cart.jpg' alt='Motorized Shopping Cart'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/shopping-cart'>Motorized Shopping Cart</a> </h2><p class='article__excerpt'>Not the fastest thing I&#39;ve ever built, but definitely the most fun to ride :)</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Classifiers for Improving Superconducting Qubit Readout Fidelity from Homodyne Detection",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/readout",
+      "date"     : "Apr 23, 2023",
+      "content"  : "CodeGitHubReport",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/readout'> <img src='/images/fridge.jpg' alt='Classifiers for Improving Superconducting Qubit Readout Fidelity from Homodyne Detection'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/readout'>Classifiers for Improving Superconducting Qubit Readout Fidelity from Homodyne Detection</a> </h2><p class='article__excerpt'>Final project for a class, which turned into a research project with MIT&#39;s Engineering Quantum Systems Lab.</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "SparkFun Qwiic Switch/Button/Thermocouple",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/qwiic",
+      "date"     : "Apr 23, 2023",
+      "content"  : "",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/qwiic'> <img src='/images/qwiic.jpg' alt='SparkFun Qwiic Switch/Button/Thermocouple'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/qwiic'>SparkFun Qwiic Switch/Button/Thermocouple</a> </h2><p class='article__excerpt'>Products I designed (and sold!) while working at SparkFun Electronics.</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "The Art and Science of PCB Design",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/pcb",
+      "date"     : "Apr 23, 2023",
+      "content"  : "",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/pcb'> <img src='/images/pcb.png' alt='The Art and Science of PCB Design'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/pcb'>The Art and Science of PCB Design</a> </h2><p class='article__excerpt'>An IAP Class I created and taught with Adi Mehrotra</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Manta: An In-Situ Debugger for Programmable Hardware",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/manta",
+      "date"     : "Apr 23, 2023",
+      "content"  : "",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/manta'> <img src='/images/manta.png' alt='Manta: An In-Situ Debugger for Programmable Hardware'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/manta'>Manta: An In-Situ Debugger for Programmable Hardware</a> </h2><p class='article__excerpt'>Master&#39;s Thesis at MIT</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Formula SAE Low Voltage Power Distribution",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/lv-batt",
+      "date"     : "Apr 23, 2023",
+      "content"  : "",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/lv-batt'> <img src='/images/lv_batt.jpg' alt='Formula SAE Low Voltage Power Distribution'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/lv-batt'>Formula SAE Low Voltage Power Distribution</a> </h2><p class='article__excerpt'>Modularized and fully digital control and monitoring of regulated outputs from a LiIon battery pack.</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Network-attached Laser Projector",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/laser-projector",
+      "date"     : "Apr 23, 2023",
+      "content"  : "",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/laser-projector'> <img src='/images/laser.jpg' alt='Network-attached Laser Projector'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/laser-projector'>Network-attached Laser Projector</a> </h2><p class='article__excerpt'>Final Project for 6.111 Digital Systems Laboratory in Fall 2020. Done with Jay Lang.</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Formula SAE Tractive Inverter",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/inverter",
+      "date"     : "Apr 23, 2023",
+      "content"  : "",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/inverter'> <img src='/images/inverter.png' alt='Formula SAE Tractive Inverter'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/inverter'>Formula SAE Tractive Inverter</a> </h2><p class='article__excerpt'>20kW 400V IGBT-based motor controller for MIT Formula SAE.</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Self-Balancing One-Wheeled Hoverboard",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/hoverboard",
+      "date"     : "Apr 23, 2023",
+      "content"  : "",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/hoverboard'> <img src='/images/hoverboard.jpg' alt='Self-Balancing One-Wheeled Hoverboard'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/hoverboard'>Self-Balancing One-Wheeled Hoverboard</a> </h2><p class='article__excerpt'>Final Project for 6.1311 Power Electronics Lab in Fall 2019</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "GPS Disciplined Oscillator",
+      "category" : "",
+      "tags"     : "Personal Projects",
+      "url"      : "/gpsdo",
+      "date"     : "Apr 23, 2023",
+      "content"  : "You see, I’ve got a little bit of a problem. My mentor is a professional metrologist whose career revolves around measuring things very, very accurately. In my years of working with him, I seem to have been bitten by this bug somewhat in machining (I have to use micrometers, can’t use calipers) but moreso in electronics. Perhaps that’s due to the fact that electron motion is invisible, giving the properties I’m measuring a mysterious characteristic, or that there’s more to measure than a dimension or an angle. Either way, in October 2016 I set out to build a self-calibrating frequency standard to measure time very accurately, to within a part per billion.Before I dive in, here are some pictures of the final product and the stages of its development:         In electronics, we can measure a few concrete, basic properties of a system: Voltage, Current, Resistance, and Time. Given that I’ve got a HP 34401 6.5 digit multimeter, I’ve got the first three covered. But other than the uncalibrated crystal oscillator inside a 5315 counter, I don’t have an accurate time reference.Stating that one desires to measure time is about as specific as saying that one wants to measure electricity, so for more clarification, I want to measure frequency, period, and time intervals. The 5315 can perform these measurements, but with little accuracy. It contains a crystal oscillator, but I don’t know the last time it was calibrated, and it was off by about 100 parts per billion at the last check.In order to measure frequency, the counter will count how many peaks enter the instrument in the time it takes for its local oscillator (LO) to count to ten million, as the internal oscillator has a frequency of 10MHz. Period measurements are taken in a similar way, where it counts the amount of peaks of the LO in between peaks of the input signal. Time interval measurements are basically period measurements, but instead of starting and stopping LO counting on one input signal, it will start counting on one input’s peak, and stop on the other input’s peak.Thus, all time measurements are, in essence, counting processes. This greatly simplifies the internal architecture of the counter, but the measurement accuracy is completely dependent on the accuracy of the LO. As a result, measurements from the 5315 are not terribly accurate, simply because of the LO’s inaccuracy.What’s one to do? The LO in my counter can be adjusted, but I wouldn’t know how much to adjust it by without a more accurate time source, referred to as a frequency standard. And even with an accurate frequency standard, the LO’s frequency will drift from the ideal over time. This means that a LO calibrated with NIST’s hydrogen maser will be spot on right after calibration, but no good within a week.This leaves us in a little bit of a pickle. If the LO can’t keep it’s calibration, how can we be expected to make an accurate measurement? The simple answer is to not use the LO at all, but bypass it and use a more accurate external frequency reference instead.Traditional frequency references take two forms, crystal and atomic. The 5315 contains a crystal, and while they are significantly cheaper than their counterparts, they suffer from the aforementioned problem of drift. They can’t keep the same frequency over time, but the frequency is easily changed by applying small voltage to the crystal. Crystals that allow the user to change their frequency are called voltage controlled oscillators, or VCOs, and the 5315’s LO is of this type.Atomic frequency references or atomic clocks are more expensive, but have a much lower drift rate than crystalline counterparts. Most hobbyist-accessible atomic frequency references derive their oscillation period from the hyperfine transition of rubidium. Rubidium frequency standards can be calibrated similarly to crystals, and they will keep their calibration for a long period of time due to their low drift rate. These characteristics result in a very stable, but consequently very expensive, frequency standard.If crystal oscillators won’t cut the mustard and atomic clocks are out of reach, how can I get a precision timebase? The answer lies in (cue music) space…Or more specifically, low Earth orbit. GPS relies on the ability to accurately measure distance between a receiver and a satellite whose position is known. If d=rt, then in order to know distance very accurately, then the speed of light and the time it took to travel from the satellite to the receiver must also be known very accurately. Thanks to some bright folks with cool lasers, we know the speed of light very well, and due to the sheer magnitude of c, time must be known very, very precisely to have any hope of knowing position.Luckily for us, each GPS satellite carries onboard a frequency standard maintained by the United States Naval Observatory and synchronized to their master clock. A GPS module can lock onto the signals broadcast by the constellation, and extract timing information from them in the form of a One Pulse Per Second (1PPS) signal. This signal goes high at the beginning of every UTC second, and by measuring the amount of time in between the rising edge of two pulses, one second of time can be measured.This is fantastic! A time reference with the same accuracy as the USNO’s master clock for free!Not so fast, buster.The problem with this approach is that Earth has an atmosphere, and the radio signal gets scattered within it on its way down, taking more (or less) time to reach the receiver than it otherwise would. This, combined with multipath propagation effects where the GPS signals from the satellites take multiple paths to the receiver, creates noise (±1μs) in the 1PPS. Thanks to the algorithms in the GPS network, over time timing is perfect, but short-term, it stinks.So, a crystal has short-term accuracy, but lacks long-term accuracy. GPS timing doesn’t have short-term accuracy, but offers perfect long-term timekeeping. If only it was possible to combine the two for both short and long term accuracy!Which is exactly what I’ve done. The system architechture is a frequency locked loop, where the microcontroller counts the amount of peaks output by its LO in between the rising edges of the 1PPS. If this value is higher than 10 million counts, equating to 10 MHz, then the LO is too fast. If the value is lower than 10 MHz, then the LO is too slow. Since the 1PPS signal is noisy, these measurements are noisy too. To compensate, the firmware on the microcontroller averages them for about 45 minutes, and then will generate its “best guess” of what it thinks the error is.After this “best guess” is generated, the system will write a new value to the DAC if necessary. The DAC converts a digital value from the microcontroller into an analog value that directly controls the frequency of the oscillator. Increasing the voltage decreases the frequency, and decreasing the voltage increases the frequency. Thus, the negative feedback portion of the loop takes place within the oscillator itself, and doesn’t need to take place within software. The derivation of the new DAC value from the best guess has been the subject of the Brief Encounter with the GPIB series of log posts, and is accomplished by multiplying the best guess by a constant specified in LSB/mHz. After this new value is written, the microcontroller erases the previous set of data and begins the cycle again. Thus, the frequency of the internal crystal is “disciplined” to the GPS. Since the crystal is oven controlled, the entire system can be referred to as a GPS Disciplined Oven Controlled Crystal Oscillator, or GPSDOCXO or GPSDO for short. In a block diagram, it looks like this:However, the above diagram is greatly simplified, and doesn’t show a few minor technical points.The DAC’s output only goes from 0-5V, and the OCXO accepts 0-10V on its VCO input. An OP-07 precision amplifier takes care of multiplying this signal by two to maximize the tuning range of the DAC. In addition to output scaling, the DAC needs a 5V reference. I could have merely used the 5V rail, but I chose to use a 0.04% accuracy, 3ppm/°C voltage reference. This ensures that the DAC’s output voltage doesn’t vary with the load on the 5V rail. Increased load current would create a higher power dissipation in the 7805 linear regulator, and cause a temperature change, heavily affecting the high thermal coefficient voltage reference inside the 7805. I didn’t want to risk it, and the reference prevents any temperature dependent voltage changes.The diagram also doesn’t show the front panel components, which consist of an LCD, LEDs, switches, and BNC output connectors.Also, the microcontroller is clocked at 16 MHz, and the Nyquist sampling theorem limits the maximum frequency it can count to 8MHz. Ten doesn’t divide cleanly into eight, and while fractional frequency synthesis could have been done, it would have introduced additional jitter and further exacerbated the noise problem. However, five divides nicely into ten, and a 74HC74 flip-flop divides the signal by two before feeding it into the microcontroller.The internal OCXO’s output is sinusoidal, with an amplitude of about ±1.5V. This presented a few problems, as the flip-flop will be destroyed if fed a negative voltage, and the output of the crystal wasn’t strong enough to directly drive it. Both problems were fixed with a NPN transistor amplifier, and the oscillator’s output is AC coupled through a capacitor to the base of the transistor, which is biased above ground with a trimpot voltage divider.But wait! The transistor amplifier and flip-flop only drive the microcontroller, what about the outputs that would be driving my counter? I wouldn’t want to connect them to the collector of the amplifier, because if the output were to pull the voltage higher than zero and turn the GPSDO’s output into an input, the OCXO could be destroyed. I needed a multi-port buffer, so that the device could drive additional loads and protect itself simultaneously.A 74HC7014 fit the bill nicely. It’s a hex schmitt trigger, which acts like a comparator in this application. It takes the positive sinusoidal signal from the transistor amplifier and converts it into a 0-5V signal to drive both the flip-flop and the front panel outputs. Since the signal from the transistor amplifier is still relatively weak, it passes through one trigger before driving the other trigger inputs. In this configuration, the amplifier only drives one input, instead of three inputs; two for the front panel outputs and one for the flip-flop.All put together, the simplified block diagram becomes rather complicated, and looks like this:For the curious, here is the full system schematic:The source code is available on GitHub.Design architecture aside, I soldered the circuit onto a perfboard and installed it a case graciously donated by an old HP ASCII to Parallel converter. I sanded the paint off the front panel of the instrument, milled a hole for the LCD, installed the indicators and connectors, and soldered the connections to a daughterboard which hosts a ribbon cable to facilitate communication with the main board. This allows for easy disconnection from the rest of the device for ease of disassembly and troubleshooting. 3M Dual Lock was used to mechanically affix the LCD to the front panel, and the switches are bolted into the front panel, allowing for quick, complete disassembly if necessary.I finished building the oscillator in February 2017, and finished testing in April 2017. It works quite well if I do say so myself. From the GPIB series of log posts, I know that it exceeds my original goal of 1ppb accuracy on average, and just barely comes in over on the extreme. That’s pretty darn accurate, especially for such a low-cost design.Additionally, during this project, I acquired experience with a number of technologies with which I was previously uninitiated to:  RF (&amp;gt;100kHz). This was probably the most interesting and infuriating part of the project. All of the wires on the perfboard act as little transmitting and receiving antennas, and the 10MHz signal leaks everywhere. Placing bypass capacitors on IC inputs and small inductors in series with the power rails, as well as separating the analog and digital grounds on the perimeter-outlining ground plane solved the issue.  I2C. The DAC communicates with the microcontroller over I2C, and I wrote my own library for the MAX5217 as there was none available. Originally the LCD was going to connect to the microcontroller over I2C as well to save I/O, but despite my best efforts, I could not get LCD and the DAC to work on the bus at the same time. Both devices would work perfectly if they were the peripherals on the bus, but if they were both on the bus, neither would work. Troubleshooting this took three weeks, and I could never figure it out. The solution was the replacement of the I2C LCD with one that communicates over TTL serial.  Direct manipulation of the ATMega328’s registers. There is no library to easily interact with the counting control registers, and all the configuration was done by carefully writing to them after spending a week reading documentation on how to do so.  LabVIEW. The test program as well as the user interface for the device were both written in this language, and the development of the automated test system is heavily documented in the Brief Encounter with the GPIB series of posts.  GPIB. See above.If I were to do this project over again, I would use a microcontroller or FPGA with a higher clock speed to count the full 10 MHz, and achieve twice the resolution of the measurement. The resolution could be further increased by using a 100 MHz OCXO, allowing for twenty times as many pulses to be counted, increasing the resolution by the same factor. The output would have to be divided by ten as 10 MHz is the industry standard, but this would increase phase noise.That said, I’m pretty happy with the results, and I hope you enjoyed reading about this project as much as I enjoyed developing it!",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/gpsdo'> <img src='/images/gpsdo/gpsdoxco.jpg' alt='GPS Disciplined Oscillator'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/gpsdo'>GPS Disciplined Oscillator</a> </h2><p class='article__excerpt'>Tuning a crystal oscillator to within 1ppb of the GPS network.</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Characterization of Gear Oil Degradation via Microwave Cavity",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/gear-oil",
+      "date"     : "Apr 23, 2023",
+      "content"  : "CodeGitHubReport",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/gear-oil'> <img src='/images/oil.jpg' alt='Characterization of Gear Oil Degradation via Microwave Cavity'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/gear-oil'>Characterization of Gear Oil Degradation via Microwave Cavity</a> </h2><p class='article__excerpt'>Final Project for 6.013 Electromagetics in Spring 2021. Done with Alex Studer and Levi Gerson.</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Flamethrower",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/flamethrower",
+      "date"     : "Apr 23, 2023",
+      "content"  : "",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/flamethrower'> <img src='/images/flamethrower.png' alt='Flamethrower'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/flamethrower'>Flamethrower</a> </h2><p class='article__excerpt'>Made from an old fire extinguisher that...well...no longer exactly extinguisher fire.</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Engineering Brightness",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/engineering-brightness",
+      "date"     : "Apr 23, 2023",
+      "content"  : "A ballad of teamwork, design for manufacture, and hope.1.3 billion people across the world lack a source of artificial lighting, prohibiting them from safely leaving their homes at night or doing work after dark. A rudimentary kerosene lamp is often used, but carbon monoxide and combustion byproducts build up in the air, causing sometimes fatal respiratory health issues. Kerosene is also very expensive, and provides little useful light for the amount of fuel consumed.A few years back, Preston Middle School in Colorado started Engineering Brightness, an ongoing program designed to replace the existing combustion-based lighting solutions with LED lanterns that can be recharged with a solar panel. The design was created and built entirely by middle schoolers, and the lanterns are currently being used in developing nations everywhere from Guatemala to Liberia.More information is available from Philanthropic Engineering.Quite a few of the students at my high school went to Preston, and they wanted to carry on their passion for the project here. Last semester, we started our own team to design and fabricate an improved design. I had the honor of being the Electrical Subsystem Team Lead, and I was responsible for redesigning the electronics in the lantern with a small team of fellow students.For reference, this is Preston’s design:The case is two 3D-printed halves joined at the middle, with a power switch and barrel jack for charging. Electrically, the system is a 4.8V NiMh battery pack powering an array of white LEDs in parallel that illuminate the top portion of the lantern. Here’s a schematic:The circuit shown is a fair prototype. It includes reverse voltage protection in the form of the diode in series with the charging port, and the desired brightness can be varied by adjusting the amount of LEDs installed in parallel, without having to change any other part of the circuit. This means that a single PCB can be built with pads for, say, 30 LEDs, but if only 25 are required to produce the desired amount of light, then five pads can go empty, and no new circuit board is needed to reflect this design change.In the field, they’ve had issues with the batteries failing prematurely. Everything usually works for the first few charge/discharge cycles, but they stop holding a charge shortly thereafter. The current fix is to connect an external battery pack designed for charging smartphones to the barrel jack instead of a solar panel. These battery packs have built in solar panels, and store the charge instead of the lantern’s built in pack.Let’s see if we can figure out what’s going on here.In this configuration, the charging/discharging current isn’t regulated. How fast the batteries charge is determined only by the charger’s output impedance and the internal resistance of the battery. Given the huge difference in voltages between the charger (8V maximum) and the pack (4.8V) a very large current could be driven through the battery, permanently damaging the internal chemistry and reducing their lifespan.Similarly, the battery pack could be charged over its designed voltage by as much as 50%, and also be discharged below its recommended voltage by as much as 40%. This process severely reduces the longevity and capacity of the cells, explaining their inability to hold a charge.Without further ado, this is what we came up with. For the curious, all of the design files are in this GitHub repo.We addressed the shortcomings of the previous design by regulating charging and discharging with a battery management circuit. The 4S NiMH pack was changed to a single Li-ion cell that’s charged and discharged through a MCP73871, a BMS with an integrated charger. In addition to regulating current, it also automatically disconnects the battery from the charger when it’s full (or from the load when it’s empty) ensuring that it isn’t taken beyond it’s limits.On the load side of the circuit, we replaced the array of smaller LEDs with a single power LED, allowing us to shrink the size of the enclosure and save on materials costs. Additionally, people in colder climates prefer a warmer, reddish light, while people who live in hotter climates prefer a cooler, bluer light. We found that moving to a higher-power LED specifically designed for lighting gave us more freedom over the emission spectra, and we chose a colder color temperature to suit the preferences of our users near the equator.We also added a custom constant-current LED driver that I designed. Although it has the same efficiency as an equivalent resistor, it protects against thermal runaway. Given the smaller enclosure with no airflow, I wanted to make sure the LED wouldn’t enter thermal runaway, where it’s power consumption increases with its temperature. As it heats up, the effective resistance drops, dissipating more heat in the LED. This cycle repeats, and it’s longevity would be reduced in the long term, assuming it doesn’t self destruct in the short term. A resistor would allow this phenomenon to happen, but a closed-loop driver ensures a constant power is delivered to the LED, preventing this from occurring.Moving to a 3.7V battery voltage also allowed us to boost the efficiency slightly, the difference between the battery voltage and the LED voltage in our design is only about 800mV instead of 1.8V in the previous design. Although the driver in the new design still wastes some power as heat, using a lower supply voltage allowed us to improve efficiency by about 15%.Conveniently, adding the custom driver also allows the current through the LED to be set with a voltage on the non-inverting input of an opamp. I configured a potentiometer as a voltage divider, allowing the user to change the brightness by turning a knob on the side of the unit. We had a small run of PCBs made and assembled them ourselves by laser cutting our own stencils and reflowing them on a hot plate.Mechanically, our design also uses a 3D printed enclosure, but mimics a handheld flashlight rather than a lantern. We wanted something that could cast light both in front of the user and around them, without using an external lens that would increase cost. There’s a small plastic lens integrated into the LED that scatters the light, which we exploited by including a clip on the rear of the case so that it can be hung from the ceiling. This spreads the light around a room without requiring any extra parts, but the brightness does get somewhat attenuated due to the light being farther away from the user. We mitigated this by inserting a mylar reflector behind the LED, redirecting any light trapped inside the casing back towards the user.We also laser cut new enclosures to protect the 2.5W solar panels we’re using to charge the lights, and took the opportunity to include a little bit about ourselves :)All told, we were able to get about 3.5 hours of run time at about three times the brightness of the previous design. Although this was a prototype, if a longer runtime was desired we could have either added more cells in parallel or used a more efficient (and complex) switching LED driver. We thought our design was the best mix of run time, luminous output, complexity, and manufacturability by high schoolers.And manufactured they were! We sent out about twenty lights this summer to Puerto Rico and Guatemala, and they made it out to the field!I’ll admit that when you’re knee deep in MOSFET datasheets and opamp gain calculations it’s a little easy to get lose sight of what you’re really working towards. But in the end, the smiles on their faces make it all more than worth it :)",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/engineering-brightness'> <img src='/images/engineering_brightness/0.jpg' alt='Engineering Brightness'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/engineering-brightness'>Engineering Brightness</a> </h2><p class='article__excerpt'>Master&#39;s Thesis at MIT</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Formula SAE HV Battery Charger",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/charger",
+      "date"     : "Apr 23, 2023",
+      "content"  : "",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/charger'> <img src='/images/charger.jpg' alt='Formula SAE HV Battery Charger'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/charger'>Formula SAE HV Battery Charger</a> </h2><p class='article__excerpt'>2kW 400V output from a J1172 / Type 1 EV charger input.</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Bimetallic Cantilevers for a MEMS Thermal Actuator",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/cantilever",
+      "date"     : "Apr 23, 2023",
+      "content"  : "CodeGitHubReport",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/cantilever'> <img src='/images/cantilever.png' alt='Bimetallic Cantilevers for a MEMS Thermal Actuator'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/cantilever'>Bimetallic Cantilevers for a MEMS Thermal Actuator</a> </h2><p class='article__excerpt'>Final Project for 6.152 Micro/Nano Processing Technology in Spring 2022. Won Best Paper Award.</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Optimal Design of a Current-Mode Boost Converter",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/boost",
+      "date"     : "Apr 23, 2023",
+      "content"  : "",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/boost'> <img src='/images/boost.png' alt='Optimal Design of a Current-Mode Boost Converter'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/boost'>Optimal Design of a Current-Mode Boost Converter</a> </h2><p class='article__excerpt'>Final Project for 6.334 Graduate Power Electronics in Spring 2020.</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Beavercube Flight Computer",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/beavercube",
+      "date"     : "Apr 23, 2023",
+      "content"  : "",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/beavercube'> <img src='/images/beavercube.jpg' alt='Beavercube Flight Computer'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/beavercube'>Beavercube Flight Computer</a> </h2><p class='article__excerpt'>Triple-processor, redundant compute for a 3U CubeSat. Currently in low earth orbit.</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "EOSS-266 High Altitude Balloon Launch",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/balloon",
+      "date"     : "Apr 23, 2023",
+      "content"  : "One of the projects that I’m worked on with my high school’s makerspace is a high altitude balloon sensor package. NASA added us to the Colorado Space Grant Consortium, meaning that we get to fly a four pound payload on a high altitude balloon. I’ve been working with one of the project leaders, and we’re strapping a Gear 360 onto the payload to record 4K 360 panoramic video of the flight, as well as some other atmospheric sensors.Here’s some footage from the launch:And from the recovery:And here’s the flight as recorded from one of the payloads onboard:Data and its analysis is coming soon from the teams, but it seems like all should be well. There was a couple hours worth of data left on our SD cards and nothing crashed, although some last-minute battery configuration changes might have shortened the run-time and eaten into the 20% safety factor.We almost set an altitude record, reaching 107,830 feet exactly an hour and a half after launch. In total, it covered 128 miles in its 2 hour and 39 minute flight, with a top speed of 116mph.Thanks to both teams and EOSS for a great flight!",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/balloon'> <img src='/images/balloon.png' alt='EOSS-266 High Altitude Balloon Launch'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/balloon'>EOSS-266 High Altitude Balloon Launch</a> </h2><p class='article__excerpt'>Done with the Colorado Space Grant Consortium</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Exploration and Comparison of Ballbot Controllers",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/ballbot",
+      "date"     : "Apr 23, 2023",
+      "content"  : "PresentationCodeGitHubReport",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/ballbot'> <img src='/images/ballbot.png' alt='Exploration and Comparison of Ballbot Controllers'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/ballbot'>Exploration and Comparison of Ballbot Controllers</a> </h2><p class='article__excerpt'>Final Project for 6.832 Underactuated Robotics in Spring 2021. Done with Suzanna Jiwani and Jorge Nin.</p></div></div></div>"
+    } ,
+  
+    {
+      "title"    : "Amorphics LLC",
+      "category" : "",
+      "tags"     : "MIT Projects",
+      "url"      : "/amorphics",
+      "date"     : "Apr 23, 2023",
+      "content"  : "",
+      "article"  : "<div class='article col col-4 col-d-6 col-t-12 animate'> <div class='article__inner'> <div class='article__head'> <time class='article__date' datetime='2023-04-23T12:01:35+00:00'>23 Apr 2023</time><a class='article__image' href='/amorphics'> <img src='/images/amorphics_logo.jpg' alt='Amorphics LLC'> </a></div><div class='article__content'> <h2 class='article__title'> <a href='/amorphics'>Amorphics LLC</a> </h2><p class='article__excerpt'>Small business I started in high school to manufacture recycled 3D printer filament.</p></div></div></div>"
+    } 
+  
+]
