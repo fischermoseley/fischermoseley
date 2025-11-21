@@ -1,6 +1,6 @@
 #-------------------------------
 # Site Settings
-title: fischer moseley 🐠
+title: fischer (moseley) pettner 🐠
 logo: # You can add own logo. For example '/images/logo.png'.
 description: Menca personal blogging theme for Jekyll
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -11,8 +11,8 @@ color_scheme: auto # You can choose three modes auto, light, and dark. By defaul
 #-------------------------------
 # Author Settings
 author:
-  author__name: Fischer Moseley 🐠
-  author__bio: "FPGA Engineer at NASA JPL. Interested in quantum computing, open-source silicon, robotics, and fusion energy. MIT '22, MEng '23"
+  author__name: Fischer (Moseley) Pettner 🐠
+  author__bio: "Accelerator Design Verification at Rivos. Passionate about quantum computing, open-source silicon, robotics, and fusion energy. Previously FPGAs at NASA JPL, MIT '22, MEng '23"
   author__avatar: '/images/headshot.jpg'
 
 social:
